@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001A49;
+    --color-title: #734D6D;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', Georgia;
 }
 
 .container {
@@ -20,8 +21,8 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    min-height: 600px;
-    max-height: 800px;
+    min-height: 500px;
+    max-height: 700px;
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -35,9 +36,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');
+    background-image: linear-gradient(180deg, #55355c8c 10%, #9494948c 100%), url('../images/wedding_03.jpg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    clip-path: polygon(0 0, 99% 0, 100% 85%, 50% 100%, 0 85%);
     z-index: -1;
 }
 
@@ -99,12 +100,13 @@ body {
     grid-auto-rows: max-content;
     align-content: center;
     gap: 1em;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
 .hero__title {
     font-size: 3rem;
+    font-family: Merriweather;
 }
 
 .hero__paragraph {
@@ -113,17 +115,39 @@ body {
 
 .cta {
     display: inline-block;
-    background-color: #2091F9;
+    background-color: #734D6D;
     justify-self: center;
     color: #fff;
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
 }
+.cta__block{
+    display: inline-block;
+    background-color: #c093b9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: rgb(255 255 255 / 50%);
+    background-image: url(../images/flowers_vertical_01.jpg);
+    /* background-size: 0 0 20px 20px; */
+}
 
-/* About */
+/* invitation */
 
-.about {
+.invitation {
+    text-align: center;
+}
+.rules{
     text-align: center;
 }
 
@@ -132,13 +156,17 @@ body {
     font-size: 2rem;
     margin-bottom: 25px;
 }
-
-
-.about__paragraph {
-    line-height: 1.7;
+.text{
+    line-height: 0.1;
 }
-
-.about__main {
+.invitation__paragraph {
+    line-height: -1;
+}
+/* Message */
+.message{
+    text-align: center;
+}
+.message__main {
     padding-top: 80px;
     display: grid;
     width: 90%;
@@ -149,7 +177,7 @@ body {
 }
 
 
-.about__icons {
+.message__icons {
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -158,117 +186,18 @@ body {
     margin: 0 auto;
 }
 
-.about__icon {
+.message__icon {
     width: 40px;
-}
-
-/* Knowledge */
-
-.knowledge {
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    overflow: hidden;
-}
-
-.knowledge__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    align-items: center;
-}
-
-.knowledge__picture{
-    max-width: 500px;
-}
-
-.knowledge__paragraph{
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-.knowledge__img{
-    width: 100%;
-    display: block;
-}
-
-/* price */
-
-.price{
-    text-align: center;
-}
-
-.price__table{
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.price__element{
-    background-color: #e5e5f7;
-    text-align: center;
-    border-radius: 10px;
-    width: 330px;
-    padding: 40px;
-    --color-plan: #696871;
-    --color-price: #1D293F;
-    --bg-cta: #fff;
-    --color-cta: #5454D4;
-    --color-items: #696871;
-}
-
-.price__element--best{
-    width: 370px;
-    padding: 60px 40px;
-    background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta: #9F3919;
-    --color-cta: #FFF;
-    --color-items: #fff;
-}
-
-
-.price__name{
-    color: var(--color-plan);
-    margin-bottom: 15px;
-    font-weight: 300;
-}
-
-.price__price{
-    font-size: 2.5rem;
-    color: var(--color-price);
-}
-
-.price__items{
-    margin-top: 35px;
-    display: grid;
-    gap: 1em;
-    font-weight: 300;
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    color: var(--color-items);
-}
-
-.price__cta{
-    display: block;
-    padding: 20px 0;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: var(--bg-cta);
-    font-weight: 600;
-    color: var(--color-cta);
-    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
 /* Testimony */
 
 .testimony{
-    background-color: #e5e5f7;
+    background-color: #ffdefa;
+    opacity: 0.8;
+    background-image:  radial-gradient(#734D6d 0.5px, transparent 0.5px), radial-gradient(#734D6d 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 .testimony__container{
@@ -302,7 +231,7 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 50% 50%;
 }
 
 .testimony__texts{
@@ -396,7 +325,7 @@ body {
 /* Footer */
 
 .footer{
-    background-color: #1D293F;
+    background-color: #734d6d;
 }
 
 .footer__title{
@@ -487,11 +416,15 @@ body {
 @media (max-width:800px){
     .nav__menu{
         display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #aa60a4;
     }
 
     .nav__link--menu{
         position: fixed;
-        background-color: #000;
+        background-color: #aa60a4;
         top: 0;
         left: 0;
         height: 100%;
@@ -525,23 +458,29 @@ body {
     }
 
 
-    .about__main{
+    .message__main{
         gap: 2em;
     }
-
-    .about__icons:last-of-type{
+    body{
+        margin: 0;
+        padding: 0;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-color: rgb(255 255 255 / 50%);
+    }
+    .message__icons:last-of-type{
         grid-column: 1/-1;
     }
 
 
-    .knowledge__container{
+    .invitation__container{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
     }
 
-    .knowledge__picture{
+    .invitation__picture{
         grid-row: 1/2;
         justify-self: center;
     }
