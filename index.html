@@ -49,10 +49,6 @@
                 <li class="nav__items">
                     <a href="./paginas/Blog.html" class="nav__links">Blog</a>
                 </li>
-                <li class="nav__items">
-                    <a href="./paginas/Location.html" class="nav__links">Ubicación</a>
-                </li>
-
                 <img src="./images/close.svg" class="nav__close">
             </ul>
 
@@ -67,15 +63,14 @@
     </header>
 
     <main class="main">
-        <section class="container invitation">
+        <section class="container invitation seccion animar-izquierda">
             <p class="invitation__paragraph">¡Nos casamos!</p>
             <h2 class="subtitle">16 de Marzo 2024</h2>
             <p class="invitation__paragraph">Ixtlahuaca de Rayón, EdoMex, México</p>
             
         </section>
-        <section class="container message">
+        <section class="container message seccion animar-derecha">
             <h3 class="subtitle">¡Bienvenidos a nuestra boda!</h3>
-            <p class="invitation__paragraph">¡Nos casamos!!!<br><br></p>
             <p class="invitation__paragraph">¡Estamos super felices! Nos sentimos en las nubes y queremos compartir contigo todo nuestro amor. Por eso estamos preparando una boda que hará historia..<br><br> </p>
             <p class="invitation__paragraph">Nos vemos pronto, ¡abrazos!</p>
             <div class="message__main">
@@ -96,7 +91,7 @@
                 </article>
             </div>
         </section>
-        <section class="container message">
+        <section class="container message seccion animar-izquierda">
             <p class="invitation__paragraph">Nos encantará contar con tu presencia por el alto estima que compartimos, queremos verte y eso es lo principal. Ahora bien, si te nace demostrarnos tu afecto de alguna forma, aquí te compartimos algunas ideas.<br><br> </p>
             <div class="message__main">
                 <article class="message__icons">
@@ -109,15 +104,26 @@
                     <h3 class="invitation__title">Luna de Miel</h3>
                     <a class="cta__block">$</a>
                 </article>
+            </div>
+        </section>
+        <section class="normas container seccion animar-derecha">
+            <p class="invitation__paragraph">Para disfrutar el evento, te compartimos algunas recomendaciones para mantener la magia y procurar la seguridad de todos los asistentes.</p>
+            <div class="message__main">
                 <article class="message__icons">
                     <img src="./images/clottes.svg" class="message__icon">
                     <h3 class="invitation__title">Código de Vestimenta</h3>
-                    <a class="cta__block">Mujeres no usar vestido blanco</a>
+                    <a class="cta__block">Semi Formal</a>
+                    <p class="invitation__paragraph">Evitar usar vestidos color blanco o crema.</p>
+                </article>
+                <article class="message__icons">
+                    <img src="./images/child.svg" class="message__icon">
+                    <h3 class="invitation__title">Niños</h3>
+                    <a class="cta__block">Permitidos</a>
+                    <p class="invitation__paragraph">Cuida de ellos y no permitas que anden solos.</p>
                 </article>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
@@ -133,9 +139,6 @@
                     <li class="nav__items">
                         <a href="./paginas/Blog.html" class="nav__links">Blog</a>
                     </li>
-                    <li class="nav__items">
-                        <a href="./paginas/Location.html" class="nav__links">Ubicación</a>
-                    </li>
                 </ul>
             </nav>
         </section>
@@ -147,12 +150,11 @@
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 
-            <h3 class="footer__copyright">Derechos reservados &copy; @JHVentura</h3>
+            <h3 class="footer__copyright">Derechos reservados &copy; JHVentura</h3>
         </section>
     </footer>
-
-    <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 
 </html>
