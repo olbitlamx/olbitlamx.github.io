@@ -421,32 +421,7 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
-@keyframes animar-desde-la-izquierda{
-    from{
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes animar-desde-la-derecha{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-.animar-izquierda{
-    animation: animar-desde-la-izquierda 0.5s ease-out;
-}
-.animar-derecha{
-    animation: animar-desde-la-derecha 0.5s ease-out;
-}
+
 /* Media queries */
 
 @media (max-width:800px){
